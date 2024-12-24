@@ -1,0 +1,27 @@
+.filters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  row-gap: 1rem;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .filters {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
